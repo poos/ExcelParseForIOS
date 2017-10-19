@@ -3,10 +3,11 @@
 ## 项目从这个地址pull的: https://github.com/poos/ExcelParseForIOS
 ## 对其中一些bug 修复, 同时整理一下资料
 
-## 修复xlsx
-### 修复当Excel表格下的sheet被命名过的情况下读取错误
-### 修复某些情况下数据顺序错乱情况
-
+```
+修复xlsx
+1. 修复当Excel表格下的sheet被命名过的情况下读取错误
+2. 修复某些情况下数据顺序错乱情况
+```
 
 
 ####1.解析csv
