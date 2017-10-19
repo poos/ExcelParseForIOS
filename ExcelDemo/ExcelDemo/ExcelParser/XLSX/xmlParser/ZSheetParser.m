@@ -50,11 +50,13 @@
         _colArr = [NSMutableArray array];
         currentRowNum = 0;
         ZSheet *sheet = self.sheetArr[i];
-        NSString *sheetPath = [NSString stringWithFormat:@"%@/xl/worksheets/%@.xml",destinationPath,sheet.name.lowercaseString];
+        NSString *sheetPath = [NSString stringWithFormat:@"%@/xl/worksheets/sheet%d.xml",destinationPath,i+1];
         
         self.parseFilePath = sheetPath;
         self.xmlParser.delegate = self;
-        [self.xmlParser parse];
+        if (![self.xmlParser parse]) {
+            NSLog(@"sheet内部未知打开失败");
+        }
         self.allColDict[sheet.name] = self.colArr;
         _colArr = nil;
     }

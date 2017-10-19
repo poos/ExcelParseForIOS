@@ -94,7 +94,9 @@
         ZContent *content = [[ZContent alloc] init];
         content.value     = self.currentString;
         self.currentString = nil;
-        [self.contentArr addObject:content];
+        if (content.value.length) {
+            [self.contentArr addObject:content];
+        }
     }
 }
 

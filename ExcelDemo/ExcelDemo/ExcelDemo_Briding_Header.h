@@ -12,4 +12,5 @@
 
 #endif /* ExcelDemo_Briding_Header_h */
 
+#import "ZContent.h"
 #import "LAWExcelTool.h"

@@ -26,7 +26,9 @@ class ViewController: UIViewController, LAWExcelParserDelegate {
             print("文件没找到")
             return
         }
-        
+//        if path is UIView {
+//            <#code#>
+//        }
        LAWExcelTool.shareInstance().delegate = self
         
         LAWExcelTool.shareInstance().parserExcel(withPath: path)
@@ -35,7 +37,13 @@ class ViewController: UIViewController, LAWExcelParserDelegate {
     
     //LAWExcelParserDelegate
     func parser(_ parser: LAWExcelTool!, success responseObj: Any!) {
-        print(responseObj)
+        let arr : NSArray = responseObj as! NSArray;
+        for obj in arr {
+            if obj is ZContent {
+                let objc : ZContent = obj as! ZContent
+                print(objc.keyName, objc.value)
+            }
+        }
     }
     
 
