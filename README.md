@@ -23,6 +23,7 @@ http://download.csdn.net/download/zjn640322/9613147#comment
 
 其实最初是down的这个修改bug(调了几个小时,有一种柳暗花明的感觉), 后来结合时候才找到本文作者的demo, 很不错, 推荐. 另外bug也提交給他了
 
+另外推荐一个OC解析和导出excel的库: https://github.com/renebigot/XlsxReaderWriter
 
 ---
 xlsx 解压后是一些xml文档
