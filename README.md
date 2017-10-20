@@ -1,6 +1,6 @@
 # 这个项目用来读取 Excel 表格内容的(不是加载显示), 类型包括csv,xls,xlsx
 
-## 项目从这个地址pull的: https://github.com/poos/ExcelParseForIOS
+### 项目从这个地址fork的: https://github.com/molangwu/ExcelParseForIOS
 ## 对其中一些bug 修复, 同时整理一下资料
 
 ```
